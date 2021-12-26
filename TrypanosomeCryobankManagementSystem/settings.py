@@ -20,8 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-zg4)hmbr)=(pn0c4(!@rafb9#n#&9-$4wm-&5$u=-wg)bygvxd'
-
+# SECRET_KEY = 'django-insecure-zg4)hmbr)=(pn0c4(!@rafb9#n#&9-$4wm-&5$u=-wg)bygvxd'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -30,7 +30,7 @@ CORS_ORIGIN_WHITELIST = ['http://localhost:3001']
 CORS_ALLOWED_HOSTS = ['http://127.0.0.1:3001/',
                       'http://localhost:3001/', '127.0.0.1', '*', 'http://127.0.0.1:3001/*']
 
-ALLOWED_HOSTS = ['http://localhost:3001/',
+ALLOWED_HOSTS = ['cryobank.herokuapp.com', 'http://localhost:3001/',
                  'http://127.0.0.1:3001/', '127.0.0.1', ' *']
 
 
