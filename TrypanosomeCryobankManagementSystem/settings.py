@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CORS_ORIGIN_WHITELIST = ['http://localhost:3001']
+CORS_ORIGIN_WHITELIST = ['cryobank-sys.netlify.app', 'http://localhost:3001']
 
 CORS_ALLOWED_HOSTS = ['http://127.0.0.1:3001/',
                       'http://localhost:3001/', '127.0.0.1', '*', 'http://127.0.0.1:3001/*']
