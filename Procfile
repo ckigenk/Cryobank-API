@@ -1,1 +1,1 @@
-web: gunicorn cryobank.wsgi
+web: gunicorn TrypanosomeCryobankManagementSystem.wsgi
