@@ -34,7 +34,9 @@ CORS_ALLOWED_HOSTS = ['http://127.0.0.1:3001/',
 ALLOWED_HOSTS = ['cryobank.herokuapp.com', 'http://localhost:3001/',
                  'http://127.0.0.1:3001/', '127.0.0.1', ' *']
 
+CORS_ORIGIN_ALLOW_ALL = True
 
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -58,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+
 
 ]
 
